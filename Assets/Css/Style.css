@@ -1,0 +1,189 @@
+@layer base,
+main,
+responsive;
+
+@layer base {
+
+    /* Root Color */
+    :root {
+        /* CoolGray 200 */
+        --coolgray2: #EDF2F7;
+        /* CoolGray 500 */
+        --coolgray5: #A0AEC0;
+        /* CoolGray 700 */
+        --coolgray7: #4A5568;
+        /* CoolGray 800 */
+        --coolgray8: #2D3748;
+        /* CoolGray 900 */
+        --coolgray9: #1A202C;
+
+        /* Teal 200 */
+        --teal5: #B2F5EA;
+        /* Teal 500 */
+        --teal5: #38B2AC;
+        /* Teal 800 */
+        --teal5: #285E61;
+
+        /* Indigo 500 */
+        --indigo5: #667EEA;
+    }
+
+    /* Root Color */
+
+    /* Typo Graphy */
+    @font-face {
+        font-family: Graphik;
+        font-weight: 500;
+        font-style: fallback;
+        src: local(Graphik-Regular), url(../Font/Graphik-Regular.woff);
+    }
+
+    @font-face {
+        font-family: Graphik;
+        font-weight: bold;
+        font-style: fallback;
+        src: local(Graphik-Medium), url(../Font/Graphik-Medium.woff);
+    }
+
+    /* Typo Graphy */
+
+    /* CSS Reset */
+    * {
+        font-family: Graphik;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+        font-size: 62.5%;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+        background: var(--coolgray2);
+        color: var(--coolgray9);
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* CSS Reset */
+}
+
+@layer main {}
+
+@layer responsive {}
