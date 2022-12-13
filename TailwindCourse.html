@@ -1,27 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
 
 <head>
     <title>"Tailwind Course" Portfolio by Peyman</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/Css/Style.css">
+    <link rel="stylesheet" href="Assets/Css/Style.css">
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="display: none; position: absolute; visibility: hidden;">
+        <symbol id="search" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.3199 12.9056L15.4165 14.0023C15.8277 13.9795 16.2465 14.1252 16.5607 14.4393L19.5607 17.4393C20.1464 18.0251 20.1464 18.9749 19.5607 19.5607C18.9749 20.1464 18.0251 20.1464 17.4393 19.5607L14.4393 16.5607C14.1252 16.2465 13.9795 15.8277 14.0023 15.4165L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056ZM8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                fill="currentColor" />
+        </symbol>
+    </svg>
 
-    <!-- Footer Source  -->
-    
-    <header style="font-weight: 500;">
-        In The Header 1
+    <!-- Header Source  -->
+    <header>
+        <div class="Header">
+            <div class="container">
+                <div class="Header__Body">
+                    <div class="Header__Body--logo">
+                        <img src="./Assets/Image/Logo.svg" alt="">
+                    </div>
+                    <div class="Header__Body--HambergerMenu">
+                    </div>
+
+                    <div class="Header__Body--Menu">
+                        <ul>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Trips</a></li>
+                            <li><a href="#">Messages</a></li>
+                        </ul>
+                        <a href="https://peymanath.ir/">
+                            <img width="40" height="40" src="./Assets/Image/user.jpg" alt="User Peyman Naderi"
+                                title="Leader Team - Peyman Naderi">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="headermenu">
+            <div class="headermenu__navigation">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">List your property</a></li>
+                        <li><a href="#">Trips</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="headermenu__account">
+                <div class="container">
+                    <div class="headermenu__account--user">
+                        <a href="https://peymanath.ir/">
+                            <img width="40" height="40" src="./Assets/Image/user.jpg" alt="User Peyman Naderi"
+                                title="Leader Team - Peyman Naderi">
+                            <span>Peyman Naderi</span>
+                        </a>
+                    </div>
+                    <div class="headermenu__account--links">
+                        <ul>
+                            <li><a href="#">Account Setting</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerfilter">
+            <div class="container">
+                <div class="headerfilter__body">
+                    <div class="headerfilter__search">
+                        <form class="headerfilter__search--form" method="GET">
+                            <span>
+                                <svg  class="headerfilter__search--icon">
+                                    <use xlink:href="#search"></use>
+                                </svg>
+                            </span>
+                            <input type="text" placeholder="Search By Keycoard">
+                        </form>
+                    </div>
+                    <div class="headerfilter__filter">
+                        <span>
+                            <ion-icon class="headerfilter__filter--icon" name="filter-outline"></ion-icon>
+                        </span>
+                        <span class="headerfilter__filter--text">Filter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <header style="font-weight: bold;">
-        In The Header 1
-    </header>
-
-    <!-- Footer Source  -->
+    <!-- Header Source  -->
 
     <!-- Main Source  -->
     <main></main>
@@ -33,6 +109,8 @@
 
 
     <!-- Add Main Script path -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./Assets/JavaScript/MainScript.js" defer></script>
 </body>
 
