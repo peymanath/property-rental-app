@@ -25,91 +25,221 @@
     </svg>
 
     <!-- Header Source  -->
-    <header>
+    <header id="headerRow">
         <div class="Header">
-            <div class="container">
-                <div class="Header__Body">
-                    <div class="Header__Body--logo">
-                        <img src="./Assets/Image/Logo.svg" alt="">
-                    </div>
-                    <div class="Header__Body--HambergerMenu">
-                    </div>
-
-                    <div class="Header__Body--Menu">
-                        <ul>
-                            <li><a href="#">List your property</a></li>
-                            <li><a href="#">Trips</a></li>
-                            <li><a href="#">Messages</a></li>
-                        </ul>
-                        <a href="https://peymanath.ir/">
-                            <img width="40" height="40" src="./Assets/Image/user.jpg" alt="User Peyman Naderi"
-                                title="Leader Team - Peyman Naderi">
-                        </a>
-                    </div>
-
+            <div class="Header__Body">
+                <div class="Header__Body--logo">
+                    <img src="Assets/Image/Logo.svg" alt="">
                 </div>
-            </div>
-        </div>
-        <div class="headermenu">
-            <div class="headermenu__navigation">
-                <div class="container">
+                <div class="Header__Body--HambergerMenu">
+                </div>
+
+                <div class="Header__Body--Menu">
                     <ul>
                         <li><a href="#">List your property</a></li>
                         <li><a href="#">Trips</a></li>
                         <li><a href="#">Messages</a></li>
                     </ul>
+                    <a href="https://peymanath.ir/">
+                        <img width="40" height="40" src="Assets/Image/user.jpg" alt="User Peyman Naderi"
+                            title="Leader Team - Peyman Naderi">
+                    </a>
                 </div>
             </div>
-
-            <div class="headermenu__account">
-                <div class="container">
-                    <div class="headermenu__account--user">
-                        <a href="https://peymanath.ir/">
-                            <img width="40" height="40" src="./Assets/Image/user.jpg" alt="User Peyman Naderi"
-                                title="Leader Team - Peyman Naderi">
-                            <span>Peyman Naderi</span>
-                        </a>
-                    </div>
-                    <div class="headermenu__account--links">
+        </div>
+        </div>
+        <div class="headermenu">
+            <div class="headermenu__content">
+                <div class="headermenu__navigation">
+                    <div class="container">
                         <ul>
-                            <li><a href="#">Account Setting</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Sign Out</a></li>
+                            <li><a href="#">List your property</a></li>
+                            <li><a href="#">Trips</a></li>
+                            <li><a href="#">Messages</a></li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="headermenu__account">
+                    <div class="container">
+                        <div class="headermenu__account--user">
+                            <a href="https://peymanath.ir/">
+                                <img width="40" height="40" src="Assets/Image/user.jpg" alt="User Peyman Naderi"
+                                    title="Leader Team - Peyman Naderi">
+                                <span>Peyman Naderi</span>
+                            </a>
+                        </div>
+                        <div class="headermenu__account--links">
+                            <ul>
+                                <li><a href="#">Account Setting</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="bottomHeader">
-            <div class="container">
-                <div class="bottomHeader__body">
-                    <div class="bottomHeader__search">
-                        <form class="bottomHeader__search--form" method="GET">
-                            <span>
-                                <svg class="bottomHeader__search--icon">
-                                    <use xlink:href="#search"></use>
-                                </svg>
-                            </span>
-                            <input type="text" placeholder="Search By Keycoard">
-                        </form>
-                    </div>
-                    <div class="bottomHeader__filter">
+            <div class="bottomHeader__body">
+                <div class="bottomHeader__search">
+                    <form class="bottomHeader__search--form" method="GET">
                         <span>
-                            <svg class="bottomHeader__filter--icon">
-                                <use xlink:href="#filter"></use>
+                            <svg class="bottomHeader__search--icon">
+                                <use xlink:href="#search"></use>
                             </svg>
                         </span>
-                        <span class="bottomHeader__filter--text">Filter</span>
-                    </div>
+                        <input type="text" name="search" placeholder="Search By Keycoard">
+                    </form>
+                </div>
+                <div class="bottomHeader__filter">
+                    <span>
+                        <svg class="bottomHeader__filter--icon">
+                            <use xlink:href="#filter"></use>
+                        </svg>
+                    </span>
+                    <span class="bottomHeader__filter--text">Filter</span>
                 </div>
             </div>
+        </div>
+        <div class="bottomHeaderFilter">
+
+            <form action="/" method="GET" class="bottomHeaderFilter__form">
+                <div class="bottomHeaderFilter__form--body">
+                    <div class="bottomHeaderFilter__bedrooms">
+                        <div class="bottomHeaderFilter__bedrooms--inputselection">
+                            <div class="selection">
+                                <label for="bedrooms">Bedrooms</label>
+                                <select name="bedrooms" id="bedrooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4" selected>4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="selection">
+                                <label for="bedrooms">Bedrooms</label>
+                                <select name="bedrooms" id="bedrooms">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div id="pricerange" class="selection">
+                                <label for="bedrooms">Price Range</label>
+                                <select name="bedrooms" id="bedrooms">
+                                    <option value="1">Up to $500 /wk</option>
+                                    <option value="2">Up to $1,000 /wk</option>
+                                    <option value="3" selected>Up to $2,000 /wk</option>
+                                    <option value="4">Up to $4,000 /wk</option>
+                                    <option value="5">Up to $10,000 /wk</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomHeaderFilter__propertyType">
+                        <div class="bottomHeaderFilter__propertyType--inputradio">
+                            <div>
+                                <p id="propertyTypeTitle">Property Type</p>
+                            </div>
+                            <div class="listinput">
+                                <label class="inputradio">
+                                    <input type="checkbox" name="propertyType">
+                                    <span>House</span>
+                                </label>
+                                <label class="inputradio">
+                                    <input type="checkbox" name="propertyType">
+                                    <span>Apartment</span>
+                                </label>
+                                <label class="inputradio">
+                                    <input type="checkbox" name="propertyType" checked>
+                                    <span>Loft</span>
+                                </label>
+                                <label class="inputradio">
+                                    <input type="checkbox" name="propertyType">
+                                    <span>Townhouse</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomHeaderFilter__amenities">
+                        <div class="bottomHeaderFilter__amenities--inputcheckbox">
+
+                            <div>
+                                <p id="amenitiesTitle">Amenities</p>
+                            </div>
+
+                            <div class="listinput">
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="balcony">
+                                    <span>Balcony</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="airConditioning">
+                                    <span>Air conditioning</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="pool" checked>
+                                    <span>Pool</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="beach">
+                                    <span>Beach</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="petFriendly">
+                                    <span>Pet friendly</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="kidFriendly">
+                                    <span>Kid friendly</span>
+                                </label>
+
+                                <label class="inputcheckbox">
+                                    <input type="checkbox" name="parking">
+                                    <span>Parking</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="HeaderFilterUpdate">
+                    <button type="submit">Update results</button>
+                </div>
+            </form>
         </div>
     </header>
     <!-- Header Source  -->
 
-    <!-- Main Source  -->
-    <main></main>
-    <!-- Main Source  -->
+    <div id="bodyContent">
+        <div>
+            <div id="header">
+
+            </div>
+            <!-- Main Source  -->
+            <main>
+                <div>این یک متن تست است </div>
+            </main>
+            <!-- Main Source  -->
+        </div>
+
+        <!-- Sidebar Source  -->
+        <aside id="sidebarFilterDesktop">
+            <div>
+                <img src="Assets/Image/Logo.svg" alt="">
+
+            </div>
+        </aside>
+        <!-- Sidebar Source  -->
+    </div>
 
     <!-- Footer Source  -->
     <footer></footer>
@@ -117,7 +247,7 @@
 
 
     <!-- Add Main Script path -->
-    <script src="./Assets/JavaScript/MainScript.js" defer></script>
+    <script src="Assets/JavaScript/MainScript.js" defer></script>
 </body>
 
 </html>
