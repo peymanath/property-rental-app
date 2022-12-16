@@ -22,6 +22,8 @@ Responsive;
     :root {
         /* CoolGray 200 */
         --coolgray2: #EDF2F7;
+        /* CoolGray 400 */
+        --coolgray4: #CBD5E0;
         /* CoolGray 500 */
         --coolgray5: #A0AEC0;
         /* CoolGray 600 */
@@ -34,14 +36,16 @@ Responsive;
         --coolgray9: #1A202C;
 
         /* Teal 200 */
-        --teal5: #B2F5EA;
+        --teal2: #B2F5EA;
         /* Teal 500 */
         --teal5: #38B2AC;
         /* Teal 800 */
-        --teal5: #285E61;
+        --teal8: #285E61;
 
         /* Indigo 500 */
         --indigo5: #667EEA;
+        /* Indigo 600 */
+        --indigo6: #5A67D8;
     }
 
     /* Typo Graphy */
@@ -207,6 +211,36 @@ Responsive;
     a {
         text-decoration: none;
         color: var(--coolgray2);
+    }
+
+    p {
+        color: var(--coolgray6);
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 10px 0;
+        color: var(--coolgray9);
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        color: var(--coolgray9);
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        padding: 10px 0;
+        color: var(--coolgray9);
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        padding: 10px 0;
+        color: var(--coolgray9);
     }
 
     .container {
@@ -443,13 +477,13 @@ Responsive;
             flex-wrap: wrap;
             justify-content: space-between;
             flex-direction: column;
-            transition: visibility 0s 0s;
-            visibility: hidden;
+            transition: display 0s 0s;
+            display: none;
         }
 
         .headerFilterShow .bottomHeaderFilter__form--body {
-            transition: visibility .5s .3s;
-            visibility: visible;
+            transition: display .5s .3s;
+            display: block;
         }
 
         .bottomHeaderFilter__bedrooms,
@@ -585,7 +619,7 @@ Responsive;
 
         .headerFilterShow .HeaderFilterUpdate button {
             width: 100%;
-            padding: 12px;
+            padding: 10px 40px;
             background-color: var(--indigo5);
             border-radius: 8px;
             color: #fff;
@@ -599,10 +633,119 @@ Responsive;
             display: none;
             visibility: hidden;
         }
+
+        /* Body Content */
+        .lastEstate {
+            padding: 25px 20px;
+        }
+
+        .lastEstate__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lastEstate__carts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* gap: 10px; */
+        }
+
+        .lastEstate__carts .estateCart {
+            width: 100%;
+        }
+
+        .lastEstate__viewMore {
+            display: none;
+        }
+
+        /* Product Cart */
+        .estateCart__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .estateCart__body img {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        .estateCart__content {
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 15px;
+            width: 280px;
+            padding: 19px;
+            margin-top: -90px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            background-color: #FFF;
+            color: var(--coolgray6);
+            font-size: 1.6rem;
+            text-align: left;
+        }
+
+        .estateCart__content--meta {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .estateCart__content--meta .plus {
+            background-color: var(--teal2);
+            color: var(--teal8);
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 18px;
+        }
+
+        .estateCart__content--meta .dot {
+            margin: 0 5px;
+            font-size: 1.5rem;
+        }
+
+        .estateCart__content--title h3 {
+            padding: 0;
+        }
+
+        .estateCart__content--price .rate {
+            color: var(--coolgray9);
+        }
+
+        .estateCart__content--review {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .estateCart__content--review {
+            font-size: 1.4rem;
+        }
+
+        .estateCart__content--review .star {
+            width: 12px;
+            height: 12px;
+            color: var(--coolgray4);
+        }
+
+        .estateCart__content--review .star.score {
+            color: var(--teal5)
+        }
     }
 }
 
 @layer Responsive {
+    @media only screen and (min-width: 676px) {
+
+        .lastEstate__carts .estateCart {
+            width: 49%;
+        }
+    }
+
     @media only screen and (min-width: 768px) {
         .container {
             width: 736px;
@@ -626,6 +769,16 @@ Responsive;
         .bottomHeaderFilter__form--body {
             flex-direction: row;
         }
+
+        .headerFilterShow .HeaderFilterUpdate {
+            width: unset;
+            text-align: left;
+        }
+
+        .headerFilterShow .HeaderFilterUpdate button {
+            width: unset;
+        }
+
     }
 
     @media only screen and (min-width: 1024px) {
@@ -703,6 +856,17 @@ Responsive;
         .bottomHeaderFilter__bedrooms--inputselection #pricerange.selection {
             width: 100%;
         }
+
+        .lastEstate__viewMore {
+            display: inline-block;
+            color: var(--indigo6);
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .lastEstate__carts .estateCart {
+            width: 32%;
+        }
     }
 
     @media only screen and (min-width: 1200px) {
@@ -722,15 +886,22 @@ Responsive;
             visibility: visible;
         }
 
-        #bodyContent{
+        #bodyContent {
             display: flex;
-            
         }
-        
+
         #header,
         #sidebarFilterDesktop {
             display: block;
             visibility: visible;
+        }
+
+        #sidebarFilterDesktop {
+            width: 15%;
+        }
+
+        #ContentDesktopControl {
+            width: 85%;
         }
     }
 
