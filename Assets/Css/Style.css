@@ -425,9 +425,12 @@ Responsive;
             position: relative;
             height: 0;
             width: 100%;
-            font-size: 1.6rem;
             background-color: var(--coolgray8);
             transition: height .4s ease-in-out
+        }
+
+        .bottomHeaderFilter__form{
+            font-size: 1.6rem;
         }
 
         .headerFilterShow .bottomHeaderFilter {
