@@ -622,7 +622,7 @@ Responsive;
             width: 100%
         }
 
-        .lastEstate__viewMore {
+        .lastEstate__viewMore a{
             display: none
         }
 
@@ -878,7 +878,7 @@ Responsive;
             width: 100%
         }
 
-        .lastEstate__viewMore {
+        .lastEstate__viewMore a{
             display: inline-block;
             color: var(--indigo6);
             font-weight: 700;
