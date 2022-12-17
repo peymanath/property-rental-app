@@ -1,156 +1,125 @@
 @layer Base,
 Main,
 Header,
+Content,
 Responsive;
 
-/** Roadmap Css Style
-* 1 Layer Base
-*   1.1 Root Color
-*   1.2 Typo Graphy
-*   1.3 CSS Reset
-*   1.4 Base Style
-* 2 Layer main
-*   2.1.1 Layer Header
-*      2.1.2 Main Header
-*      2.1.3.1 Bottom Header
-*         2.1.3.2 Filter Section
-*/
-
 @layer Base {
-
-    /* Root Color */
     :root {
-        /* CoolGray 200 */
         --coolgray2: #EDF2F7;
-        /* CoolGray 300 */
         --coolgray3: #E2E8F0;
-        /* CoolGray 400 */
         --coolgray4: #CBD5E0;
-        /* CoolGray 500 */
         --coolgray5: #A0AEC0;
-        /* CoolGray 600 */
         --coolgray6: #718096;
-        /* CoolGray 700 */
         --coolgray7: #4A5568;
-        /* CoolGray 800 */
         --coolgray8: #2D3748;
-        /* CoolGray 900 */
         --coolgray9: #1A202C;
-
-        /* Teal 200 */
         --teal2: #B2F5EA;
-        /* Teal 500 */
         --teal5: #38B2AC;
-        /* Teal 800 */
         --teal8: #285E61;
-
-        /* Indigo 500 */
         --indigo5: #667EEA;
-        /* Indigo 600 */
-        --indigo6: #5A67D8;
+        --indigo6: #5A67D8
     }
 
-    /* Typo Graphy */
     @font-face {
         font-family: Graphik;
         font-weight: 500;
         font-style: fallback;
-        src: local(Graphik-Regular), url(../Font/Graphik-Regular.woff);
+        src: local(Graphik-Regular), url(../Font/Graphik-Regular.woff)
     }
 
     @font-face {
         font-family: Graphik;
-        font-weight: bold;
+        font-weight: 700;
         font-style: fallback;
-        src: local(Graphik-Medium), url(../Font/Graphik-Medium.woff);
+        src: local(Graphik-Medium), url(../Font/Graphik-Medium.woff)
     }
 
-    /* CSS Reset */
-    html,
-    body,
-    div,
-    span,
+    a,
+    abbr,
+    acronym,
+    address,
     applet,
-    object,
-    iframe,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
     img,
     ins,
     kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
     q,
+    ruby,
     s,
     samp,
+    section,
     small,
+    span,
     strike,
     strong,
     sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
     summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
     time,
-    mark,
-    audio,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
     video {
         margin: 0;
         padding: 0;
         border: 0;
-        vertical-align: baseline;
+        vertical-align: baseline
     }
 
     article,
@@ -164,7 +133,7 @@ Responsive;
     menu,
     nav,
     section {
-        display: block;
+        display: block
     }
 
     body {
@@ -172,106 +141,101 @@ Responsive;
         background: var(--coolgray2);
         color: var(--coolgray9);
         max-width: 1500px;
-        margin: auto;
+        margin: auto
     }
 
     ol,
     ul {
-        list-style: none;
+        list-style: none
     }
 
     table {
         border-collapse: collapse;
-        border-spacing: 0;
+        border-spacing: 0
     }
 
     button {
-        outline: none;
-        border: none;
+        outline: 0;
+        border: none
     }
 
-    /* Base Style */
     * {
-        font-family: Graphik;
+        font-family: Graphik
     }
 
     *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
+    ::after,
+    ::before {
+        box-sizing: border-box
     }
 
     input:focus,
     select:focus {
-        outline: none;
+        outline: 0
     }
 
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 110px;
-        font-size: 62.5%;
+        font-size: 62.5%
     }
 
     a {
         text-decoration: none;
-        color: var(--coolgray2);
+        color: var(--coolgray2)
     }
 
     p {
         color: var(--coolgray6);
         font-size: 1.6rem;
-        line-height: 1.7rem;
+        line-height: 1.7rem
     }
 
     h1 {
         font-size: 2rem;
         padding: 10px 0;
-        color: var(--coolgray9);
+        color: var(--coolgray9)
     }
 
     h2 {
         font-size: 1.8rem;
         padding: 10px 0;
-        color: var(--coolgray9);
+        color: var(--coolgray9)
     }
 
     h3 {
         font-size: 1.6rem;
         padding: 10px 0;
-        color: var(--coolgray9);
+        color: var(--coolgray9)
     }
 
     h4 {
         font-size: 1.4rem;
         padding: 10px 0;
-        color: var(--coolgray9);
+        color: var(--coolgray9)
     }
 
     .container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 10px
     }
-
-    /* Base Style */
 }
 
 @layer Main {
 
     @layer Header {
-
-        /* Main Header */
         .Header {
             width: 100%;
             background-color: var(--coolgray9);
             padding: 15px;
-            z-index: 99999;
+            z-index: 99999
         }
 
         .Header__Body {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-between
         }
 
         .Header__Body--HambergerMenu {
@@ -281,7 +245,7 @@ Responsive;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            cursor: pointer;
+            cursor: pointer
         }
 
         .Header__Body--HambergerMenu::before {
@@ -292,7 +256,7 @@ Responsive;
             height: 2px;
             border-radius: 100px;
             transform: translateY(-6px);
-            transition: .5s;
+            transition: .5s
         }
 
         .Header__Body--HambergerMenu::after {
@@ -303,22 +267,22 @@ Responsive;
             height: 2px;
             border-radius: 100px;
             box-shadow: 0 6px 0 var(--coolgray5);
-            transition: .5s;
+            transition: .5s
         }
 
         .MenuMobileShow .Header__Body--HambergerMenu::before {
-            transform: rotate(-45deg) translateY(0);
+            transform: rotate(-45deg) translateY(0)
         }
 
         .MenuMobileShow .Header__Body--HambergerMenu::after {
             transform: rotate(45deg);
-            box-shadow: 0 0 0 var(--coolgray5);
+            box-shadow: 0 0 0 var(--coolgray5)
         }
 
         .Header__Body--Menu,
         .Header__Body--Menu ul {
             display: none;
-            visibility: hidden;
+            visibility: hidden
         }
 
         .headermenu {
@@ -328,88 +292,81 @@ Responsive;
             z-index: -1;
             color: var(--coolgray2);
             font-size: 1.4rem;
-            transition: height .4s ease-in-out;
+            transition: height .4s ease-in-out
         }
 
         .MenuMobileShow .headermenu {
-            /* height: 290px; */
-            /* This property can be controlled automatically by JavaScript */
-            transition: height .4s ease-in-out;
+            transition: height .4s ease-in-out
         }
 
         .headermenu__content {
             transition: visibility 0s .2s;
-            visibility: hidden;
+            visibility: hidden
         }
 
         .MenuMobileShow .headermenu__content {
             transition: visibility .3s .3s;
-            visibility: visible;
+            visibility: visible
         }
 
         .headermenu__navigation {
-            border-bottom: 1px solid var(--coolgray8);
+            border-bottom: 1px solid var(--coolgray8)
         }
 
-        .headermenu__navigation,
-        .headermenu__account {
-            padding: 2.1rem;
+        .headermenu__account,
+        .headermenu__navigation {
+            padding: 2.1rem
         }
 
-        .headermenu__navigation ul li,
-        .headermenu__account--links ul li {
-            margin-bottom: 1.3rem;
+        .headermenu__account--links ul li,
+        .headermenu__navigation ul li {
+            margin-bottom: 1.3rem
         }
 
-        .headermenu__account--user a,
-        .Header__Body--Menu a {
+        .Header__Body--Menu a,
+        .headermenu__account--user a {
             display: flex;
             align-items: center;
-            column-gap: 10px;
+            column-gap: 10px
         }
 
-        .headermenu__account--user img,
-        .Header__Body--Menu img {
+        .Header__Body--Menu img,
+        .headermenu__account--user img {
             width: 40px;
             height: 40px;
-            border-radius: 100%;
+            border-radius: 100%
         }
 
         .headermenu__account--links {
-            margin-top: 20px;
+            margin-top: 20px
         }
 
-        /* Bottom Header */
         .bottomHeader {
-            color: var(--coolgray2);
+            color: var(--coolgray2)
         }
 
         .bottomHeader {
             width: 100%;
             background-color: var(--coolgray8);
             padding: 15px;
-            z-index: 99999;
+            z-index: 99999
         }
 
         .bottomHeader__body {
             display: flex;
             gap: 1rem;
             justify-content: space-between;
-            align-items: center;
+            align-items: center
         }
 
         .bottomHeader__search--form {
             display: flex;
             align-items: end;
             column-gap: 10px;
-            background-color: #1A202C;
+            background-color: #1a202c;
             padding: 8px 10px;
             border-radius: 8px;
-            width: 25rem;
-        }
-
-        .bottomHeader__search--form.DESKTOP{
-            background-color: var(--coolgray2);
+            width: 25rem
         }
 
         .bottomHeader__search--form input {
@@ -418,28 +375,22 @@ Responsive;
             padding: 2px;
             color: var(--coolgray5);
             font-size: 1.6rem;
-            width: 100%;
+            width: 100%
         }
 
         .bottomHeader__search--form input::placeholder {
             color: var(--coolgray5);
-            font-size: 1.6rem;
-        }
-
-        .bottomHeader__search--form.DESKTOP input,
-        .bottomHeader__search--form.DESKTOP input::placeholder,
-        .bottomHeader__search--icon.DESKTOP{
-            color: var(--coolgray6);
+            font-size: 1.6rem
         }
 
         .bottomHeader__search--form input:focus::placeholder {
-            visibility: hidden;
+            visibility: hidden
         }
 
         .bottomHeader__search--icon {
             width: 2rem;
             height: 2rem;
-            color: var(--coolgray5);
+            color: var(--coolgray5)
         }
 
         .bottomHeader__filter {
@@ -453,48 +404,34 @@ Responsive;
             color: #fff;
             height: 100%;
             cursor: pointer;
-            transition: .5s;
+            transition: .5s
         }
 
         .headerFilterShow .bottomHeader__filter {
-            background-color: var(--coolgray7);
+            background-color: var(--coolgray7)
         }
 
         .bottomHeader__filter--icon {
             width: 2rem;
             height: 2rem;
-            color: var(--coolgray5);
+            color: var(--coolgray5)
         }
 
         .bottomHeader__filter--text {
-            font-size: 1.6rem;
+            font-size: 1.6rem
         }
 
-        .headerDesktop{
-            background: #fff;
-            border-bottom:1px solid var(--coolgray3);
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .Header__Body--Menu.DESKTOP a{
-            color: var(--coolgray9);
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        /* ** Filter Section */
         .bottomHeaderFilter {
             position: relative;
             height: 0;
             width: 100%;
             font-size: 1.6rem;
             background-color: var(--coolgray8);
-            transition: height .4s ease-in-out;
+            transition: height .4s ease-in-out
         }
 
         .headerFilterShow .bottomHeaderFilter {
-            transition: height .4s ease-in-out;
+            transition: height .4s ease-in-out
         }
 
         .bottomHeaderFilter__form--body {
@@ -504,47 +441,47 @@ Responsive;
             justify-content: space-between;
             flex-direction: column;
             transition: display 0s 0s;
-            display: none;
+            display: none
         }
 
         .headerFilterShow .bottomHeaderFilter__form--body {
             transition: display .5s .3s;
-            display: block;
+            display: flex
         }
 
+        .bottomHeaderFilter__amenities,
         .bottomHeaderFilter__bedrooms,
-        .bottomHeaderFilter__propertyType,
-        .bottomHeaderFilter__amenities {
-            width: 100%;
+        .bottomHeaderFilter__propertyType {
+            width: 100%
         }
 
         .bottomHeaderFilter__bedrooms,
         .bottomHeaderFilter__propertyType {
             margin-bottom: 20px;
             padding-bottom: 20px;
-            border-bottom: 1px solid var(--coolgray9);
+            border-bottom: 1px solid var(--coolgray9)
         }
 
         .bottomHeaderFilter__amenities--inputcheckbox {
-            margin-bottom: 20px;
+            margin-bottom: 20px
         }
 
         .bottomHeaderFilter__bedrooms--inputselection {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            row-gap: 10px;
+            row-gap: 10px
         }
 
         .bottomHeaderFilter__bedrooms--inputselection .selection {
             display: flex;
             flex-direction: column;
-            width: 162px;
+            width: 162px
         }
 
         .bottomHeaderFilter__bedrooms--inputselection .selection label {
             color: var(--coolgray5);
-            margin-bottom: 8px;
+            margin-bottom: 8px
         }
 
         .bottomHeaderFilter__bedrooms--inputselection .selection select {
@@ -553,51 +490,51 @@ Responsive;
             border: none;
             width: 100%;
             padding: 12px 14px;
-            border-radius: 8px;
+            border-radius: 8px
         }
 
         .bottomHeaderFilter__bedrooms--inputselection #pricerange.selection {
-            width: 100%;
+            width: 100%
         }
 
-        .bottomHeaderFilter__propertyType--inputradio .listinput,
-        .bottomHeaderFilter__amenities--inputcheckbox .listinput {
+        .bottomHeaderFilter__amenities--inputcheckbox .listinput,
+        .bottomHeaderFilter__propertyType--inputradio .listinput {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             flex-direction: column;
             row-gap: 18px;
-            column-gap: 25px;
+            column-gap: 25px
         }
 
-        .bottomHeaderFilter__propertyType--inputradio,
-        .bottomHeaderFilter__amenities--inputcheckbox {
+        .bottomHeaderFilter__amenities--inputcheckbox,
+        .bottomHeaderFilter__propertyType--inputradio {
             display: flex;
             flex-direction: column;
             row-gap: 18px;
-            column-gap: 25px;
+            column-gap: 25px
         }
 
-        .bottomHeaderFilter__propertyType--inputradio #propertyTypeTitle,
-        .bottomHeaderFilter__amenities--inputcheckbox #amenitiesTitle {
-            color: var(--coolgray5);
+        .bottomHeaderFilter__amenities--inputcheckbox #amenitiesTitle,
+        .bottomHeaderFilter__propertyType--inputradio #propertyTypeTitle {
+            color: var(--coolgray5)
         }
 
-        .bottomHeaderFilter__propertyType--inputradio .inputradio,
-        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox {
+        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox,
+        .bottomHeaderFilter__propertyType--inputradio .inputradio {
             display: flex;
             align-items: center;
-            column-gap: 10px;
+            column-gap: 10px
         }
 
-        .bottomHeaderFilter__propertyType--inputradio .inputradio input,
-        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input {
+        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input,
+        .bottomHeaderFilter__propertyType--inputradio .inputradio input {
             appearance: none;
             margin: 0;
             width: 26px;
             height: 26px;
             background-color: var(--coolgray9);
-            border-radius: 50%;
+            border-radius: 50%
         }
 
         .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input:checked,
@@ -607,13 +544,13 @@ Responsive;
             height: 26px;
             background-color: #fff;
             border: 8px solid var(--indigo5);
-            border-radius: 50%;
+            border-radius: 50%
         }
 
-        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input:checked,
-        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input {
+        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input,
+        .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input:checked {
             border-radius: 6px;
-            border: none;
+            border: none
         }
 
         .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox input:checked {
@@ -621,17 +558,17 @@ Responsive;
             background-image: url(../Image/check.svg);
             background-position: 50% 30%;
             background-size: 28px;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat
         }
 
         .bottomHeaderFilter__amenities--inputcheckbox .inputcheckbox,
         .bottomHeaderFilter__propertyType--inputradio .inputradio {
-            color: #fff;
+            color: #fff
         }
 
         .HeaderFilterUpdate {
             transition: visibility 0s 0s;
-            visibility: hidden;
+            visibility: hidden
         }
 
         .headerFilterShow .HeaderFilterUpdate {
@@ -640,65 +577,66 @@ Responsive;
             width: 100%;
             background-color: var(--coolgray9);
             text-align: center;
-            padding: 20px;
+            padding: 20px
         }
 
-        .headerFilterShow .HeaderFilterUpdate button {
+        .HeaderFilterUpdate button {
             width: 100%;
             padding: 10px 40px;
             background-color: var(--indigo5);
             border-radius: 8px;
             color: #fff;
             font-size: 1.6rem;
-            font-weight: bold;
+            font-weight: 700
         }
 
-        /* Desktop Header & Filter Sidebar */
         #header,
         #sidebarFilterDesktop {
             display: none;
-            visibility: hidden;
+            visibility: hidden
         }
+    }
 
-        /* Body Content */
+    @layer Content {
+
         .lastEstate {
-            padding: 25px 20px;
+            padding: 25px 20px
         }
 
         .lastEstate__head {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center
         }
 
         .lastEstate__carts {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            /* gap: 10px; */
+            justify-content: space-between
         }
 
         .lastEstate__carts .estateCart {
-            width: 100%;
+            width: 100%
         }
 
         .lastEstate__viewMore {
-            display: none;
+            display: none
         }
 
-        /* Product Cart */
         .estateCart__body {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 0
         }
 
         .estateCart__body img {
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
             border-radius: 8px;
             margin: auto;
+            width: 300px;
+            object-fit: cover;
         }
 
         .estateCart__content {
@@ -708,17 +646,17 @@ Responsive;
             width: 280px;
             padding: 19px;
             margin-top: -90px;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
             border-radius: 8px;
-            background-color: #FFF;
+            background-color: #fff;
             color: var(--coolgray6);
             font-size: 1.6rem;
-            text-align: left;
+            text-align: left
         }
 
         .estateCart__content--meta {
             font-size: 1.2rem;
-            font-weight: bold;
+            font-weight: 700
         }
 
         .estateCart__content--meta .plus {
@@ -726,36 +664,35 @@ Responsive;
             color: var(--teal8);
             padding: 5px 10px;
             margin-right: 10px;
-            border-radius: 18px;
+            border-radius: 18px
         }
 
         .estateCart__content--meta .dot {
             margin: 0 5px;
-            font-size: 1.5rem;
+            font-size: 1.5rem
         }
 
         .estateCart__content--title h3 {
-            padding: 0;
+            padding: 0
         }
 
         .estateCart__content--price .rate {
-            color: var(--coolgray9);
+            color: var(--coolgray9)
         }
 
         .estateCart__content--review {
             display: flex;
-            gap: 10px;
-
+            gap: 10px
         }
 
         .estateCart__content--review {
-            font-size: 1.4rem;
+            font-size: 1.4rem
         }
 
         .estateCart__content--review .star {
             width: 12px;
             height: 12px;
-            color: var(--coolgray4);
+            color: var(--coolgray4)
         }
 
         .estateCart__content--review .star.score {
@@ -765,108 +702,105 @@ Responsive;
 }
 
 @layer Responsive {
-    @media only screen and (min-width: 676px) {
-
+    @media only screen and (min-width:676px) {
         .lastEstate__carts .estateCart {
-            width: 49%;
+            width: 49%
         }
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width:768px) {
         .container {
-            width: 736px;
+            width: 736px
         }
 
         .bottomHeader__search--form {
-            width: 32rem;
+            width: 32rem
         }
 
         .bottomHeaderFilter__bedrooms--inputselection #pricerange.selection {
-            width: 344px;
+            width: 344px
         }
 
-        .bottomHeaderFilter__propertyType--inputradio .listinput,
-        .bottomHeaderFilter__amenities--inputcheckbox .listinput {
+        .bottomHeaderFilter__amenities--inputcheckbox .listinput,
+        .bottomHeaderFilter__propertyType--inputradio .listinput {
             align-items: center;
             justify-content: unset;
-            flex-direction: row;
+            flex-direction: row
         }
 
         .bottomHeaderFilter__form--body {
-            flex-direction: row;
+            flex-direction: row
         }
 
         .headerFilterShow .HeaderFilterUpdate {
             width: unset;
-            text-align: left;
+            text-align: left
         }
 
         .headerFilterShow .HeaderFilterUpdate button {
-            width: unset;
+            width: unset
         }
-
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width:1024px) {
         .container {
-            width: 976px;
+            width: 976px
         }
 
         .Header__Body--HambergerMenu,
         .headermenu {
             display: none;
-            visibility: hidden;
+            visibility: hidden
         }
 
         .Header__Body--Menu,
         .Header__Body--Menu ul {
             display: flex;
-            visibility: visible;
+            visibility: visible
         }
 
         .Header__Body--Menu li {
-            margin-right: 3rem;
+            margin-right: 3rem
         }
 
         .Header__Body--Menu {
             column-gap: 1rem;
             justify-content: center;
-            align-items: center;
+            align-items: center
         }
 
         .Header__Body {
-            font-size: 1.6rem;
+            font-size: 1.6rem
         }
 
         .bottomHeaderFilter {
-            border-top: 1px solid var(--coolgray9);
+            border-top: 1px solid var(--coolgray9)
         }
 
+        .bottomHeaderFilter__amenities,
         .bottomHeaderFilter__bedrooms,
-        .bottomHeaderFilter__propertyType,
-        .bottomHeaderFilter__amenities {
+        .bottomHeaderFilter__propertyType {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
+        .bottomHeaderFilter__amenities--inputcheckbox,
         .bottomHeaderFilter__bedrooms--inputselection,
-        .bottomHeaderFilter__propertyType--inputradio,
-        .bottomHeaderFilter__amenities--inputcheckbox {
-            margin: 20px 0;
+        .bottomHeaderFilter__propertyType--inputradio {
+            margin: 20px 0
         }
 
         .bottomHeaderFilter__propertyType {
-            width: 20%;
-
+            width: 20%
         }
 
-        .bottomHeaderFilter__bedrooms,
-        .bottomHeaderFilter__amenities {
-            width: 37%;
+        .bottomHeaderFilter__amenities,
+        .bottomHeaderFilter__bedrooms {
+            width: 37%
         }
 
         .bottomHeaderFilter__form--body {
-            padding: 0 20px;
+            padding: 0 20px
         }
 
         .bottomHeaderFilter__bedrooms,
@@ -876,64 +810,146 @@ Responsive;
             margin-right: 20px;
             padding-right: 20px;
             border-bottom: none;
-            border-right: 1px solid var(--coolgray9);
+            border-right: 1px solid var(--coolgray9)
         }
 
         .bottomHeaderFilter__bedrooms--inputselection #pricerange.selection {
-            width: 100%;
+            width: 100%
         }
 
         .lastEstate__viewMore {
             display: inline-block;
             color: var(--indigo6);
-            font-weight: bold;
-            font-size: 1.4rem;
+            font-weight: 700;
+            font-size: 1.4rem
         }
 
         .lastEstate__carts .estateCart {
-            width: 32%;
+            width: 32%
         }
     }
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width:1200px) {
         .container {
-            width: 1170px;
+            width: 1170px
         }
 
         #headerRow {
             display: none;
-            visibility: hidden;
+            visibility: hidden
         }
 
-        /* Desktop Header & Filter Sidebar */
         #header,
         #sidebarFilterDesktop {
             display: block;
-            visibility: visible;
+            visibility: visible
         }
 
         #bodyContent {
-            display: flex;
+            display: flex
         }
 
         #header,
         #sidebarFilterDesktop {
             display: block;
-            visibility: visible;
+            visibility: visible
         }
 
         #sidebarFilterDesktop {
-            width: 15%;
+            width: 20%
         }
 
         #ContentDesktopControl {
-            width: 85%;
+            width: 80%
+        }
+
+        .HeaderFilterUpdate {
+            transition: visibility .5s .3s;
+            visibility: visible;
+            width: 100%;
+            background-color: var(--coolgray9);
+            text-align: center;
+            padding: 20px
+        }
+
+        .bottomHeaderFilter__form--body {
+            transition: display .5s .3s;
+            display: flex
+        }
+
+        .bottomHeader__search--form input,
+        .bottomHeader__search--form input::placeholder,
+        .bottomHeader__search--icon {
+            color: var(--coolgray6)
+        }
+
+        .bottomHeader__search--form {
+            background-color: var(--coolgray2)
+        }
+
+        .headerDesktop {
+            background: #fff;
+            border-bottom: 1px solid var(--coolgray3);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .Header__Body--Menu a {
+            color: var(--coolgray9);
+            font-size: 1.4rem;
+            font-weight: 700
+        }
+
+        .bottomHeaderFilter__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%
+        }
+
+        .sidebarFilterDesktop__logo {
+            background-color: var(--coolgray9);
+            padding: 25px;
+            text-align: center
+        }
+
+        .sidebarFilterDesktop__filter {
+            background-color: var(--coolgray8);
+            height: 100%
+        }
+
+        .bottomHeaderFilter__bedrooms,
+        .bottomHeaderFilter__propertyType {
+            padding: 0;
+            margin: 0;
+            border-right: none;
+            border-bottom: 1px solid var(--coolgray9);
+            width: 100%
+        }
+
+        .bottomHeaderFilter__amenities {
+            width: 100%
+        }
+
+        .bottomHeaderFilter__amenities--inputcheckbox .listinput,
+        .bottomHeaderFilter__propertyType--inputradio .listinput {
+            flex-direction: column;
+            align-items: flex-start
+        }
+
+        .bottomHeaderFilter__bedrooms--inputselection {
+            column-gap: 10px
+        }
+
+        .selection:not(#pricerange) {
+            width: 47%
         }
     }
 
-    @media only screen and (min-width: 1400px) {
+    @media only screen and (min-width:1400px) {
         .container {
-            width: 1370px;
+            width: 1370px
         }
     }
 }

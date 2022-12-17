@@ -110,7 +110,6 @@
             </div>
         </div>
         <div class="bottomHeaderFilter">
-
             <form action="/" method="GET" class="bottomHeaderFilter__form">
                 <div class="bottomHeaderFilter__form--body">
                     <div class="bottomHeaderFilter__bedrooms">
@@ -230,9 +229,121 @@
 
         <!-- Sidebar Source  -->
         <aside id="sidebarFilterDesktop">
-            <div>
+            <div class="sidebarFilterDesktop__logo">
                 <img src="Assets/Image/Logo.svg" alt="">
+            </div>
+            <div class="sidebarFilterDesktop__filter">
+                <form action="/" method="GET" class="bottomHeaderFilter__form">
+                    <div class="bottomHeaderFilter__form--body">
+                        <div class="bottomHeaderFilter__bedrooms">
+                            <div class="bottomHeaderFilter__bedrooms--inputselection">
+                                <div class="selection">
+                                    <label for="bedrooms">Bedrooms</label>
+                                    <select name="bedrooms" id="bedrooms">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4" selected>4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="selection">
+                                    <label for="bedrooms">Bedrooms</label>
+                                    <select name="bedrooms" id="bedrooms">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div id="pricerange" class="selection">
+                                    <label for="bedrooms">Price Range</label>
+                                    <select name="bedrooms" id="bedrooms">
+                                        <option value="1">Up to $500 /wk</option>
+                                        <option value="2">Up to $1,000 /wk</option>
+                                        <option value="3" selected>Up to $2,000 /wk</option>
+                                        <option value="4">Up to $4,000 /wk</option>
+                                        <option value="5">Up to $10,000 /wk</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomHeaderFilter__propertyType">
+                            <div class="bottomHeaderFilter__propertyType--inputradio">
+                                <div>
+                                    <p id="propertyTypeTitle">Property Type</p>
+                                </div>
+                                <div class="listinput">
+                                    <label class="inputradio">
+                                        <input type="checkbox" name="propertyType">
+                                        <span>House</span>
+                                    </label>
+                                    <label class="inputradio">
+                                        <input type="checkbox" name="propertyType">
+                                        <span>Apartment</span>
+                                    </label>
+                                    <label class="inputradio">
+                                        <input type="checkbox" name="propertyType" checked>
+                                        <span>Loft</span>
+                                    </label>
+                                    <label class="inputradio">
+                                        <input type="checkbox" name="propertyType">
+                                        <span>Townhouse</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomHeaderFilter__amenities">
+                            <div class="bottomHeaderFilter__amenities--inputcheckbox">
 
+                                <div>
+                                    <p id="amenitiesTitle">Amenities</p>
+                                </div>
+
+                                <div class="listinput">
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="balcony">
+                                        <span>Balcony</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="airConditioning">
+                                        <span>Air conditioning</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="pool" checked>
+                                        <span>Pool</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="beach">
+                                        <span>Beach</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="petFriendly">
+                                        <span>Pet friendly</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="kidFriendly">
+                                        <span>Kid friendly</span>
+                                    </label>
+
+                                    <label class="inputcheckbox">
+                                        <input type="checkbox" name="parking">
+                                        <span>Parking</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="HeaderFilterUpdate">
+                        <button type="submit">Update results</button>
+                    </div>
+                </form>
             </div>
         </aside>
         <!-- Sidebar Source  -->
@@ -241,11 +352,10 @@
             <div id="header">
                 <div class="headerDesktop">
 
-
-                    <div class="bottomHeader__search DESKTOP">
-                        <form action="https://peymanath.ir/" class="bottomHeader__search--form DESKTOP" method="GET">
+                    <div class="bottomHeader__search">
+                        <form action="https://peymanath.ir/" class="bottomHeader__search--form" method="GET">
                             <span>
-                                <svg class="bottomHeader__search--icon DESKTOP">
+                                <svg class="bottomHeader__search--icon">
                                     <use xlink:href="#search"></use>
                                 </svg>
                             </span>
@@ -253,7 +363,7 @@
                         </form>
                     </div>
 
-                    <div class="Header__Body--Menu DESKTOP">
+                    <div class="Header__Body--Menu">
                         <ul>
                             <li><a href="#">List your property</a></li>
                             <li><a href="#">Trips</a></li>
@@ -265,7 +375,6 @@
                                 title="Leader Team - Peyman Naderi">
                         </a>
                     </div>
-
                 </div>
             </div>
             <!-- Main Source  -->
