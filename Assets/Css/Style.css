@@ -234,6 +234,7 @@ Responsive;
 
         .Header__Body {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between
         }
@@ -354,6 +355,7 @@ Responsive;
 
         .bottomHeader__body {
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
             justify-content: space-between;
             align-items: center
